@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.useradmin{
+    width: 90%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.onuser{
+    height: 25rem;
+    width: 45%;
+    margin: 2rem;
+    border-radius: .5rem;
+
+    background-image: url(homeimages/usrback.png);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #4292F3;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.5;
+    word-spacing: 3px;
+}
+.onadmin{
+    height: 25rem;
+    width: 45%;
+    margin: 2rem; 
+    border-radius: .5rem;
+
+    background-image: url(homeimages/adback.png);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #4292F3;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.5;
+    word-spacing: 3px;
+
+}
+.useradmin button{
+    width: 70%;
+    display: inline-block;
+    padding: .5rem .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    background-color:#4292F3;
+    border-radius: .5rem;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.useradmin button:hover {
+    background-color: #324D90;
+    color: white;
+}
+
+.descr{
+    font-size: .8rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #535353;
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: .5rem;
+    border: 2px solid #4292F3;;
+    padding: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+@media screen and (max-width: 800px) {
+    .useradmin{
+        flex-direction: column;
+        height: 55rem;
+    }
+
+    .onuser{
+        width: 100%;
+    }
+    .onadmin{
+        width: 100%;
+    }
+}

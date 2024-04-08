@@ -1,0 +1,627 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #735DA5;
+    position: relative;
+    height: 50px;
+}
+
+.logo{
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+
+footer {
+    background-color: #735DA5;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+
+/*.....................BODY....................*/
+.m_body{
+    display: flex;
+    gap: 5%;
+    margin-bottom: 2%;
+}
+.newsandbooks{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 5%;
+
+}
+.image{
+    margin-top: 5%;
+    width: 50%;
+    height: auto;
+}
+.content{
+    display: flex;
+    margin-top: 5%;
+}
+.newspapers{
+    background-image: url(homeimages/news.png);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #4292F3;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-width: 40%;
+    min-height: 170px;
+    background-color: blue;
+    margin-right: 10%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.texts{
+    margin-top: 30px;
+    padding: 5px;
+    width: 80%;
+    color: #504f4f;
+}
+.books{
+    background-image: url(homeimages/book.png);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #4292F3;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-width: 40%;
+    min-height: 170px;
+    background-color: blue;
+    margin-right: 20%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.content button{
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 4% 15%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background-color:#4292F3;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.content button:hover {
+    background-color: #324D90;
+    color: white;
+  }
+
+.allusers{
+    margin-top: 30px;
+    width: 90%;
+    margin-bottom: 50px;
+    display: inline-block;
+    padding: .5rem .5rem;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background-color:#4292F3;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.allusers:hover {
+    background-color: #324D90;
+    color: white;
+  }
+/*..........................................NEWS SECTION..............................................*/
+
+.news_m_body{
+    display: flex;
+    flex-direction: column;
+}
+
+.news_main1{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.news_main2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.news_main3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.np_container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-width: 200px;
+    min-height: 130px;
+    border-radius: .5rem;
+    margin: 20px;
+    padding: 5px;
+    border: 2px solid #324D90;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+#p1{
+    background-image: url(nplogos/1.png);
+    background-size: cover;
+    background-position: center;
+}
+#p2{
+    background-image: url(nplogos/2.png);
+    background-size: cover;
+    background-position: center;
+}
+#p3{
+    background-image: url(nplogos/3.png);
+    background-size: cover;
+    background-position: center;
+}
+#p4{
+    background-image: url(nplogos/4.png);
+    background-size: cover;
+    background-position: center;
+}
+#p5{
+    background-image: url(nplogos/5.png);
+    background-size: cover;
+    background-position: center;
+}
+#p6{
+    background-image: url(nplogos/6.png);
+    background-size: cover;
+    background-position: center;
+}
+#p7{
+    background-image: url(nplogos/7.png);
+    background-size: cover;
+    background-position: center;
+}
+#p8{
+    background-image: url(nplogos/8.png);
+    background-size: cover;
+    background-position: center;
+}
+#p9{
+    background-image: url(nplogos/9.png);
+    background-size: cover;
+    background-position: center;
+}
+#p10{
+    background-image: url(nplogos/10.png);
+    background-size: cover;
+    background-position: center;
+}
+#p11{
+    background-image: url(nplogos/11.png);
+    background-size: cover;
+    background-position: center;
+}
+#p12{
+    background-image: url(nplogos/12.png);
+    background-size: cover;
+    background-position: center;
+}
+#p13{
+    background-image: url(nplogos/13.png);
+    background-size: cover;
+    background-position: center;
+}
+#p14{
+    background-image: url(nplogos/14.png);
+    background-size: cover;
+    background-position: center;
+}
+#p15{
+    background-image: url(nplogos/15.png);
+    background-size: cover;
+    background-position: center;
+}
+#p16{
+    background-image: url(nplogos/16.png);
+    background-size: cover;
+    background-position: center;
+}
+#p17{
+    background-image: url(nplogos/17.png);
+    background-size: cover;
+    background-position: center;
+}
+#p18{
+    background-image: url(nplogos/18.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.news_top{
+    overflow: hidden;
+    height: 280px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.mid{
+    display: flex;
+    animation: slide 16s infinite
+}
+.news_m_body .button{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 2% 7%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background-color:#4292F3;
+    border-radius: .5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+.news_m_body .button:hover {
+    background-color: #324D90;
+    color: white;
+  }
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0)
+    }
+    30%{
+        transform: translateX(-100%)
+    }
+    50%{
+        transform: translateX(-100%)
+    }
+    55%{
+        transform: translateX(-200%)
+    }
+    70%{
+        transform: translateX(-200%)
+    }
+    80%{
+        transform: translateX(-300%)
+    }
+    100%{
+        transform: translateX(-300%)
+    }
+}
+
+/*..........................................END NEWS SECTION..............................................*/
+
+
+
+
+
+/*..........................................PACKAGE SECTION..............................................*/
+
+.p_m_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.allpack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.p_text{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.p_blocks{
+    display: flex;
+   
+    flex-direction: column;
+    min-width: 270px;
+    min-height: 635px;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 15px;
+    border: 3px solid #735DA5;
+    box-shadow: rgb(45, 36, 65) 0px 20px 30px -10px;
+}
+.p_title{
+    width: 100%;
+    height: 120px;
+    background-color: #735DA5;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.p_description{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.bars{
+    height: 5px;
+    width: 90%;
+    background-color: #735DA5;
+    border-radius: 15px;
+    margin: 30px 0px;
+}
+.p_sn{
+    margin-top: 30px;
+    padding: 10px;
+    width: 270px;
+    text-align: center;
+    font-weight: bold;
+}
+.p_prices{
+    margin-top: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.offerings{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    font-weight: bold;
+}
+.p_button .button{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+    padding: 10px 100px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background-color:#4292F3;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+.p_button .button:hover{
+    background-color: #324D90;
+    color: white;
+}
+/*..........................................END PACKAGE SECTION..............................................*/
+
+
+/*..........................................Bookreader SECTIONs..............................................*/
+.pdf-toolbar{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.navigation_controls,
+    .zoom_controls {
+    display: flex;
+    gap: 10px;
+}
+
+   
+
+.pdf-toolbar-button{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    font-size: .5rem;
+    padding:10px 20px;
+    background: #0077b6;
+    color:white;
+    text-align: center;
+ }
+ 
+ .pdf-toolbar-button:hover{
+    background: #075178;
+ }
+
+ .message{
+    display: block;
+    background:#eee;
+    padding:1.5rem 1rem;
+    font-size: 1rem;
+    color:var(--black);
+    margin-bottom: 2rem;
+    text-align: center;
+ }
+/*..........................................Bookreader SECTION..............................................*/
+
+@media (max-width:1199px){
+    .m_body{
+        flex-direction: column;
+    }
+    .image{
+        width: 100%;
+        height: auto;
+    }
+
+    .newsandbooks{
+        width: 90%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 49px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #735DA5;
+        gap: 0;
+        overflow: hidden;
+        z-index: 1000; 
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+
+    .newsandbooks{
+        margin-left: 10%;
+    
+    }
+
+/*.....................m_BODY....................*/
+
+    .image{
+        width: 100%;
+        height: auto;
+    }
+    .m_body{
+        flex-direction: column;
+    }
+
+
+
+
+/*.....................News_m_BODY....................*/
+.news_top{
+    height: auto;
+}
+.np_container{
+    min-width: 30%;
+    min-height: 120px;
+}
+/*.......................P_M_BODY.........................*/
+.p_blocks{
+    min-width: 135px;
+    min-height: 312px;
+}
+.p_title{
+    height: 70px;
+    font-size: 1rem;
+}
+.p_sn{
+    width: 135px;
+    font-size: .8rem;
+    text-align: center;
+    margin-top: 0px;
+}
+.bars{
+    margin: 15px 0px;
+}
+.offerings{
+    font-size: .8rem;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.p_prices{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+
+}
+/*...............................................DB MQ SECTION..................................................*/
+@media screen and (max-width: 768px) {
+    .pdf-toolbar {
+        flex-direction: column;
+        overflow:scroll;
+    }
+    .navigation_controls,
+    .zoom_controls {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
